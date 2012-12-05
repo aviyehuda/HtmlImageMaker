@@ -1,0 +1,63 @@
+<Window title="HTML image maker" maximized="true"
+    xmlns:wtkx="http://pivot.apache.org/wtkx"
+    xmlns="org.apache.pivot.wtk" width="300" height="100">
+  
+
+    <content>
+        <Border styles="{padding:30}">
+            <content>
+                <BoxPane orientation="vertical" styles="{spacing:16}"  >
+                    <Label text="HTML image maker" styles="{font:'Arial 18', color:'#ff2222',
+              	  horizontalAlignment:'center', verticalAlignment:'center'}" />
+
+			<Border title="Input" styles="{padding:20}">
+                     <content>
+                      <BoxPane orientation="vertical" styles="{spacing:16}"  >
+                    <BoxPane styles="{padding:4, verticalAlignment:'center'}">
+                     
+	            		<Label text="Input Image:"/>
+	           			<TextInput textSize="40" wtkx:id="inputImage"/>
+	           			<PushButton wtkx:id="browseButtonIn" buttonData="Browse"/>
+	           			
+	        		</BoxPane>
+	        		 <Label styles="{font:'Arial 13', color:'#ff2222',
+              	  horizontalAlignment:'center', verticalAlignment:'center'}"
+              	   text="*If you wont insert an input image than the image will be a screen shot."/>
+	        		    	</BoxPane>
+	        		</content>
+	           	</Border>
+	           	<Border title="Output" styles="{padding:20}">
+            <content>
+                <BoxPane orientation="vertical" styles="{spacing:16}"  >		
+	        		   
+	        		<BoxPane styles="{padding:4, verticalAlignment:'center'}">
+	            		<Label text="Output HTML file:"/>
+	           			 <TextInput textSize="40" wtkx:id="outputHtml"/>
+	           			  <PushButton wtkx:id="browseButtonOut" buttonData="Browse"/>
+	        		</BoxPane>
+	        		
+	        		<BoxPane styles="{padding:4, verticalAlignment:'center'}">
+	            		<Label text="Inner Text:"/>
+	           			 <TextInput textSize="30" wtkx:id="innerText"/>
+	           			 
+	           			  <Checkbox buttonData="Foreground" wtkx:id="foregroundCB" />
+	        	
+	        		</BoxPane>
+
+ 				<Label styles="{font:'Arial 13', color:'#ff2222',
+              	  horizontalAlignment:'center', verticalAlignment:'center'}" 
+              	  text="*You don't have to insert any text. In this case the image will be created very similar to the original."/>
+              	  
+              	 	    
+	        		    </BoxPane>
+	        		</content>
+	           	</Border>
+	           	
+	           	
+                     <PushButton wtkx:id="generateButton" buttonData="Generate HTML image"/>
+                </BoxPane>
+            </content>
+        </Border>
+    </content>
+</Window>
+
